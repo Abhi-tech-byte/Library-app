@@ -1,0 +1,123 @@
+/* 
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+ font-family: "Roboto", sans-serif;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+/* header */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px 10px;
+    background-color: lightblue;
+    box-shadow: 0px 3px 11px black;
+
+}
+    
+
+.main-text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main-text img{
+    height: 70px;
+}
+    
+.main-text p{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+a{
+   text-decoration: none;
+}
+
+
+
+.navbar ul  {
+    display: flex;
+    font-size: 2rem;
+    gap: 50px;
+    font-weight: 600;
+    padding: 0px 60px;
+}
+.navbar ul a{
+    color: black;
+}
+
+.add-book-button{
+    width: 50px;
+    height: 50px;
+    border-radius:100% ;
+}
+
+button{
+    border:none;
+}
+
+.add-book-button:hover{
+    transform:scale(1.25);
+    cursor: pointer;
+}
+   
+
+    
