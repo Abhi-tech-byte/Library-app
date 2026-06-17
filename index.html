@@ -39,35 +39,43 @@
 
     <div class="main-content">
         <p>Nothing here yet , add books</p>
-        <button command="show-modal" commandfor="my-dialog">+</button>
-
-        <dialog id="my-dialog">
-            <h3>Add a new book</h3>
-            <form action="#" method="post">
-                <div>
-                    <label for="book_name">Name:</label>
-                    <input type="text" name="book_name" id="book_name">
-                </div>
-
-                <div>
-                    <label for="pages">No. Of pages</label>
-                    <input type="number" name="pages" id="pages">
-                </div>
-                <div>
-                    <input type="checkbox" id="read" name="read_status" value="completed">
-                    <label for="read">Read</label>
-                </div>
-
-                <button type="submit">Add Book</button>
-
-            </form>
-            <button commandfor="my-dialog" command="close">Cancel</button>
-        </dialog>
+        <button class="add-book-button">+</button>
 
     </div>
 
 
-            
+    <dialog id="my-dialog">
+        <h3>Add a new book</h3>
+        <form action="#" method="post">
+            <div>
+                <label for="book_name">Book Name:</label>
+                <input type="text" name="book_name" id="book_name">
+            </div>
+
+            <div>
+                <label for="author_name">Author Name:</label>
+                <input type="text" name="author_name" id="author_name">
+            </div>
+
+            <div>
+                <label for="pages">No. Of pages</label>
+                <input type="number" name="pages" id="pages">
+            </div>
+            <div>
+                <input type="checkbox" id="read" name="read_status" value="completed">
+                <label for="read">Read</label>
+            </div>
+
+            <button type="submit" class="addbtn">Add Book</button>
+
+        </form>
+        <button class="dialog-close-btn">Cancel</button>
+    </dialog>
+
+
+
+
+
 
 </body>
 
