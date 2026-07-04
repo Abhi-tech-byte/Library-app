@@ -101,7 +101,7 @@ a{
     font-size: 1.5rem;
     gap: 50px;
     font-weight: 600;
-    padding: 0px 60px;
+    padding: 0px 67px;
 }
 .navbar ul a{
     color: black;
@@ -129,15 +129,26 @@ button{
 
 
 .cards{
-  height: 150px ;
-  width: 150px ;
+  height: auto ;
+  width: 250px ;
   padding: 30px;
-  background-color: yellow;
+  background-color: lightblue;
   margin: 100px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+   font-family: "Roboto", sans-serif;
+  
 }
 
-
 .main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-main-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +157,7 @@ button{
     gap: 20px;
   }
 
-  .main-content > p{
+  .pre-main-content > p{
     font-weight: bold;
     font-size: 1.5rem;
   }
