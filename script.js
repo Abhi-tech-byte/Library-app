@@ -2,18 +2,39 @@ const myLibrary = [];
 
 // It is a constructor for book object ;
 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.userId = crypto.randomUUID();
+// function Book(title, author, pages, read) {
+//     this.title = title;
+//     this.author = author;
+//     this.pages = pages;
+//     this.read = read;
+//     this.userId = crypto.randomUUID();
     
+// }
+
+// Book.prototype.toggleRead = function() {
+//     this.read = !this.read;
+// }
+
+class Book{
+
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.userId = crypto.randomUUID();
+    }
+
+    toggleRead(){
+        this.read=!this.read
+    }
 }
 
-Book.prototype.toggleRead = function() {
-    this.read = !this.read;
-}
+
+
+        
+
+
 
 //Function to create book and add to the array
 
@@ -39,8 +60,15 @@ function loopsArray(arr) {
                 <button class="add-book-button">+</button>
             </div>
         `;
+        const newButton=container.querySelector(".add-book-button");
+        newButton.addEventListener('click',()=>{
+            dialog.showModal();
+            console.log("click");
+        })
+        
         return;
     }
+    
 
 
 
